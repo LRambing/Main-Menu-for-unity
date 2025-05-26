@@ -8732,6 +8732,7 @@ GameObject:
   - component: {fileID: 1880339840}
   - component: {fileID: 1880339839}
   - component: {fileID: 1880339838}
+  - component: {fileID: 1880339841}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -8815,18 +8816,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 784777990}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1880339839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8865,6 +8854,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880339836}
   m_CullTransparentMesh: 1
+--- !u!114 &1880339841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880339836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472864c494c435c4582fed3ea0fd63b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyText: {fileID: 1014556546}
+  rebindButton: {fileID: 1880339838}
 --- !u!1 &1892821059
 GameObject:
   m_ObjectHideFlags: 0
