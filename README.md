@@ -10,12 +10,17 @@
   1. Play - запускает игру
     Чтобы вы смогли игрка перекинуть на другую сцену нам нужно написать функцию в скрипте:
      ```c#
-     public void Tetris_scene()
+     
+     void OnPlayClicked()
      {
-        SceneManager.LoadScene("Bricks");
-     }
-     ```
-     SceneManager.LoadScene("Bricks"); --- "Bricks" это название сцены где будет происходить сама игра. Поставьте туда свое название сцены.
+    playButton.interactable = false; // Отключаем кнопку, чтобы не нажимали несколько раз
+    loadingUI.SetActive(true);       // Показываем индикатор загрузки
+    StartCoroutine(LoadSceneAsync("Game")); // Замените "GameScene" на имя вашей сцены
+    }
+    ```
+
+    
+  StartCoroutine(LoadSceneAsync("Game")); // Замените "GameScene" на имя вашей сцены
 
   2. Settings - настройки самой игры, менять в скриптах ничего не нужно.
     Проблемы как раз в настройках, лучше ждите релиза, чтобы настройки работали
