@@ -9,14 +9,14 @@
 Итак на первом "canvas" нас встречают основные функции:
   1. Play - запускает игру
     Чтобы вы смогли игрка перекинуть на другую сцену нам нужно написать функцию в скрипте:
+
      ```c#
-     
      void OnPlayClicked()
      {
-    playButton.interactable = false; // Отключаем кнопку, чтобы не нажимали несколько раз
-    loadingUI.SetActive(true);       // Показываем индикатор загрузки
-    StartCoroutine(LoadSceneAsync("Game")); // Замените "GameScene" на имя вашей сцены
-    }
+      playButton.interactable = false; // Отключаем кнопку, чтобы не нажимали несколько раз
+      loadingUI.SetActive(true);       // Показываем индикатор загрузки
+      StartCoroutine(LoadSceneAsync("Game")); // Замените "GameScene" на имя вашей сцены
+     }
     ```
 
     
