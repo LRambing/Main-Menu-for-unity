@@ -17,7 +17,7 @@
       loadingUI.SetActive(true);       // Показываем индикатор загрузки
       StartCoroutine(LoadSceneAsync("Game")); // Замените "GameScene" на имя вашей сцены
      }
-    ```
+     ```
 
     
   StartCoroutine(LoadSceneAsync("Game")); // Замените "GameScene" на имя вашей сцены
